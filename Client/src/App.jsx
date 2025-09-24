@@ -10,19 +10,21 @@ import StaffDashboard from './pages/StaffDashboard'
 
 
 
-import './App.css'
-
 function App() {
+
+
 
   return(
    <>
     <BrowserRouter>
     
       <Routes>
-        <Route path='/login' element={<LoginPage/>}/>
-        <Route path='/' element={<DynamicHomepage/>}/>
-        <Route path='/admin/dashboard' element={<AdminDashboard/>}/>
-        
+
+        <Route path='/login' element={<LoginPage/>} />
+        <Route path='/' element={<DynamicHomepage/>} />
+        <Route path='/admin/dashboard' element={<AdminDashboard/>} />
+        <Route path='/admin/maintenancedashboard' element={<MaintenanceDashboard/>} />
+        <Route path='/staff' element={<StaffDashboard/>} ></Route>
       </Routes>
 
     </BrowserRouter>
